@@ -9,8 +9,9 @@ import api from '../../api/packers.resource'
 export const Packers: React.FC = () => {
   const packersData: unknown = useLoaderData()
   const [packers, setPackers] = useState(packersData as Packer[])
-  const [packerDetails, setPackerDetails] = useState<Packer>()
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [packerDetails, setPackerDetails] = useState<Packer>()
+  
 
   const showModal = (packer: Packer | undefined): void => {
     setIsModalOpen(true)
