@@ -101,7 +101,7 @@ export const Packers: React.FC = () => {
                 />,
                 <Popconfirm
                   placement='rightBottom'
-                  title={'Are you sure to delete this Packer?'}
+                  title={'Are you sure to delete this packer?'}
                   description={'description'}
                   onConfirm={() => {
                     confirm(packer.id)
