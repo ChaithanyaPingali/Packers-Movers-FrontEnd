@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Card, Row, Col, Button, Popconfirm, message } from 'antd'
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons'
-import { useLoaderData } from 'react-router-dom'
-import { type Packer } from './Packers.types'
 import api from '../../api/packers.resource'
 import { CreatePacker } from './CreatePacker'
+import { useLoaderData } from 'react-router-dom'
+import { type Packer } from './Packers.types'
 
 
 export const Packers: React.FC = () => {
