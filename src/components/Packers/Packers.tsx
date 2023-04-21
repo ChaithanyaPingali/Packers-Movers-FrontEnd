@@ -9,8 +9,8 @@ import { type Packer } from './Packers.types'
 
 export const Packers: React.FC = () => {
   const packersData: unknown = useLoaderData()
-  const [packers, setPackers] = useState(packersData as Packer[])
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [packers, setPackers] = useState(packersData as Packer[])
   const [packerDetails, setPackerDetails] = useState<Packer>()
   
 
