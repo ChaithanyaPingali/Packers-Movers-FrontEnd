@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import { Card, Row, Col, Button, Popconfirm, message } from 'antd'
-import { EditOutlined, DeleteOutlined } from '@ant-design/icons'
-import api from '../../api/packers.resource'
 import { type Packer } from './Packers.types'
 import { CreatePacker } from './CreatePacker'
+import { EditOutlined, DeleteOutlined } from '@ant-design/icons'
+import api from '../../api/packers.resource'
 
 
 
