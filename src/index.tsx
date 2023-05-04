@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.css'
 import { App } from './App'
+import { getAllPackers } from './common/util'
 import reportWebVitals from './reportWebVitals'
 import { Packers } from './components/Packers'
 import { ErrorPage } from './common/ErrorPage'
-import './index.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { getAllPackers } from './common/util'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 

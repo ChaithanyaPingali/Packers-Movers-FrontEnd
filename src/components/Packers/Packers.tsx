@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
-import { Card, Row, Col, Button, Popconfirm, message } from 'antd'
-import { EditOutlined, DeleteOutlined } from '@ant-design/icons'
 import { useLoaderData } from 'react-router-dom'
-import { CreatePacker } from './CreatePacker'
+import { Card, Row, Col, Button, Popconfirm, message } from 'antd'
 import { type Packer } from './Packers.types'
+import { CreatePacker } from './CreatePacker'
+import { EditOutlined, DeleteOutlined } from '@ant-design/icons'
 import api from '../../api/packers.resource'
+
 
 
 export const Packers: React.FC = () => {
   const packersData: unknown = useLoaderData()
   const [packers, setPackers] = useState(packersData as Packer[])
-  const [isModalOpen, setIsModalOpen] = useState(false)
   const [packerDetails, setPackerDetails] = useState<Packer>()
+  const [isModalOpen, setIsModalOpen] = useState(false)
   
 
   const showModal = (packer: Packer | undefined): void => {
